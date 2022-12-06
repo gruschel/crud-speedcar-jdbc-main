@@ -1,0 +1,15 @@
+br\com\speedcar\model\SpeedCar.class
+br\com\speedcar\dao\HistoryDAO.class
+br\com\speedcar\dao\ISpeedCarDAO.class
+br\com\speedcar\AtualizarSpeedCar.class
+br\com\speedcar\CriarSpeedCar.class
+br\com\speedcar\ListarTodasSpeedCar.class
+br\com\speedcar\dao\IHistoryDAO.class
+br\com\speedcar\RemoverSpeedCar.class
+br\com\speedcar\model\Categoria.class
+br\com\speedcar\CriarHistory.class
+br\com\speedcar\AtualizarHistory.class
+br\com\speedcar\model\History.class
+br\com\speedcar\infra\ConnectionFactory.class
+br\com\speedcar\InitTables.class
+br\com\speedcar\dao\SpeedCarDAO.class

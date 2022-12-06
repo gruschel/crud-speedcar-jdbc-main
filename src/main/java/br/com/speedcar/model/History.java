@@ -1,25 +1,45 @@
 package br.com.speedcar.model;
 
-import java.time.LocalDate;
-
 public class History {
 
     private Long id;
+
+    public void setVehicle(String vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
     private String customerFullName;
     private String phoneNumber;
     private String emailAddress;
     private String occurrence;
 
-    public History(Long id, String customerFullName, String phoneNumber, String emailAddress, String occurrence) {
+    public String getVehicle() {
+        return vehicle;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    private String vehicle;
+    private boolean active;
+
+    public History(Long id, String customerFullName, String phoneNumber, String emailAddress, String occurrence, String vehicle, boolean active) {
         this.id = id;
         this.customerFullName = customerFullName;
         this.phoneNumber = phoneNumber;
         this.emailAddress = emailAddress;
         this.occurrence = occurrence;
+        this.vehicle = vehicle;
+        this.active = true;
     }
 
-    public History(String customerFullName, String phoneNumber, String emailAddress, String occurrence) {
-        this(null, customerFullName, phoneNumber, emailAddress, occurrence);
+    public History(String customerFullName, String phoneNumber, String emailAddress, String occurrence,String vehicle, boolean active) {
+        this(null, customerFullName, phoneNumber, emailAddress, occurrence,vehicle, active);
     }
 
     public Long getId() {

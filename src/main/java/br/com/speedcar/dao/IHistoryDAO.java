@@ -13,5 +13,6 @@ public interface IHistoryDAO {
     List<History> findAll(boolean showInactive);
     Optional<History> findById(Long id);
     List<History> findByCustomer(String customerFullName, boolean showInactive);
+    void InitTable(boolean forceInit);
 
 }

@@ -19,7 +19,9 @@ public class CriarHistory {
 						"Edson Arantes do Nascimento",
 						"(11)91234567",
 						"filmedopele@netflix.com",
-						"Me chamo Pelé e preciso do Gol mais bonito que vocês oferecem");
+						"Me chamo Pelé e preciso do Gol mais bonito que vocês oferecem",
+						"Golzinho amarelo",
+						true);
 
 		HistoryDAO dao = new HistoryDAO(connection);
 		dao.save(history);

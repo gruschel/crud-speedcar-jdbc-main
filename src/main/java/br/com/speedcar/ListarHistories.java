@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Optional;
 
-public class AtualizarHistory {
+public class ListarHistories {
 
 	public static void main(String[] args) throws SQLException {
 		Connection connection = ConnectionFactory.getConnection();
